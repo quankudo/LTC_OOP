@@ -24,5 +24,10 @@ namespace Oop_HuongDoiTuong
         {
             return workingHour_332*this.GetPaymentPerHour();
         }
+
+        public int GetWorkingHour()
+        {
+            return this.workingHour_332;
+        }
     }
 }
