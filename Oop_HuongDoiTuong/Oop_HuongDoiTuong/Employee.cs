@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Oop_HuongDoiTuong
 {
-    internal class Employee : IEmployee
+    abstract class Employee : IEmployee
     {
         private string name_332;
         private int paymentPerHour_332;
@@ -23,10 +23,7 @@ namespace Oop_HuongDoiTuong
             this.paymentPerHour_332 = paymentPerHour_332;
         }
 
-        public int CaculateSalary()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract int CaculateSalary();
 
         public string GetName()
         {
